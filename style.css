@@ -1,0 +1,137 @@
+body {
+  background-color: lightgreen;
+  transition: background-color .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player {
+  width: 350px;
+  height: 550px; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 10px solid black;
+  border-radius: 15px;
+  background-color: white;
+  transition: background-color 0.5s, height 0s;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.track-art {
+  margin: 1px;
+  height: 250px;
+  width: 200px;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fabstract-colorful-background.html&psig=AOvVaw0xa9oXDmh6JVlb3VE73Ndd&ust=1726216918839000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCl9bKBvYgDFQAAAAAdAAAAABAE");
+  background-size: cover;
+  border-radius: 15%;
+  border: 4px solid black;
+}
+
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-artist {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; 
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.playpause-track, .prev-track, .next-track {
+  opacity: 0.8;
+  transition: opacity .2s;
+  font-size: 3rem;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: green;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: black;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time, .total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+  font-size: 3rem; 
+}
