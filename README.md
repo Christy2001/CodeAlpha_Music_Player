@@ -21,7 +21,7 @@ A simple and responsive music player built with HTML, CSS, and JavaScript. This 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/music-player.git
+   git clone https://github.com/Christy2001/CodeAlpha_Music_Player.git
    ```
 
 2. Open `index.html` in your web browser.
@@ -42,4 +42,4 @@ This project is licensed under the MIT License.
 
 ## Author
 
-[Christy Mathai](https://github.com/Christy2001/)
+[Christy Mathai](https://github.com/Christy2001)
